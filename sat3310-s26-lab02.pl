@@ -16,7 +16,7 @@ use warnings;
 
 # Variables
 # Default directory for the files
-my $defaultdir = '/home/sat3310/Documents/labs/SAT3310-S26---Lab-2/data';
+my $defaultdir = '/home/sat3310/Documents/labs/SAT-3310---Lab-2/data';
 
 # File names
 my $nouns = 'nouns.txt';
