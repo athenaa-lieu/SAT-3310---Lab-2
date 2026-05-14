@@ -54,24 +54,24 @@ close($fh_agentnouns);
 # Store the words in an array
 
 # Open the nouns file again to read the words into an array
-open(my $fh_nouns, '<', "$defaultdir/$nouns")
+open(my $h_nouns, '<', "$defaultdir/$nouns")
     or die "Could not open file '$nouns' $!";
 
 # Read the words from the nouns file into an array
 my @nouns_array = <$fh_nouns>;
 
 # Close the nouns file
-close($fh_nouns);
+close($h_nouns);
 
 # Open the agent nouns file again to read the words into an array
-open(my $fh_agentnouns, '<', "$defaultdir/$agentnouns")
+open(my $h_agentnouns, '<', "$defaultdir/$agentnouns")
     or die "Could not open file '$agentnouns' $!";
 
 # Read the words from the agent nouns file into an array
 my @agentnouns_array = <$fh_agentnouns>;
 
 # Close the agent nouns file
-close($fh_agentnouns);
+close($h_agentnouns);
 
 # Print the number of words in each file
 
@@ -86,13 +86,13 @@ my $random_noun = $nouns_array[rand @nouns_array];
 # Remove newline character from the selected noun
 chomp($random_noun);
 # Print the randomly selected noun
-print "Randomly selected noun: $random_noun";
+print "Randomly selected noun: $random_noun\n";
 
 # Randomly select a word from the agent nouns array and print it
 my $random_agentnoun = $agentnouns_array[rand @agentnouns_array];
 # Remove newline character from the selected agent noun
 chomp($random_agentnoun);
 # Print the randomly selected agent noun
-print "Randomly selected agent noun: $random_agentnoun";
+print "Randomly selected agent noun: $random_agentnoun\n";
 
 # End of program
