@@ -54,24 +54,24 @@ close($fh_agentnouns);
 # Store the words in an array
 
 # Open the nouns file again to read the words into an array
-open(my $h_nouns, '<', "$defaultdir/$nouns")
+open(my $fh_nouns, '<', "$defaultdir/$nouns")
     or die "Could not open file '$nouns' $!";
 
 # Read the words from the nouns file into an array
 my @nouns_array = <$fh_nouns>;
 
 # Close the nouns file
-close($h_nouns);
+close($fh_nouns);
 
 # Open the agent nouns file again to read the words into an array
-open(my $h_agentnouns, '<', "$defaultdir/$agentnouns")
+open(my $fh_agentnouns, '<', "$defaultdir/$agentnouns")
     or die "Could not open file '$agentnouns' $!";
 
 # Read the words from the agent nouns file into an array
 my @agentnouns_array = <$fh_agentnouns>;
 
 # Close the agent nouns file
-close($h_agentnouns);
+close($fh_agentnouns);
 
 # Print the number of words in each file
 
