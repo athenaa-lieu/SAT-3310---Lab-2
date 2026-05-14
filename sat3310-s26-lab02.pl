@@ -1,9 +1,9 @@
-# vi ~/Documents/sat3310-s26-lab02.pl
+# vi ~/Documents/labs/SAT-3310---Lab-2/sat3310-s26-lab02.pl
 
 #!/usr/bin/perl
 
 # SAT 3310 - Lab 2
-# Created by Athena Lieu
+# Created by Athena Lieu (xlieu@mtu.edu)
 # Date: May 13th, 2026
 # Comments: The program opens two files,
 # counts the number of words,
@@ -15,6 +15,7 @@ use strict;
 use warnings;
 
 # Variables
+
 # Default directory for the files
 my $defaultdir = '/home/sat3310/Documents/labs/SAT-3310---Lab-2/data';
 
